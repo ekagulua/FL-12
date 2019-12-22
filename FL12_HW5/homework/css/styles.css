@@ -1,0 +1,222 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #024161;
+  --link: #fff;
+  --link--hover: #1f52a4;
+  --bg-footer-color: #024161;
+}
+body {
+    background-color: #0b192f;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;;
+    font-weight: 100;
+}
+p {
+    padding: 8px 24px 32px 24px;
+}
+h2 {
+    padding: 8px 24px 8px 24px;
+}
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    max-width: 980px;
+    min-width: 485px;
+}
+.post-grid img {
+    max-width: 485px;
+    min-width: 400px;
+}
+.post-grid img:hover {
+    opacity: 0.8;
+}
+.post-grid p:hover {
+    opacity: 0.8;
+}
+.post-grid h2:hover {
+    opacity: 0.8;
+}
+.post-1 {
+	background: #9d27b0;
+    max-width: 980px;
+    min-width: 485px;
+    display: inherit;
+    cursor: pointer;
+}
+.post-2 {
+	background: #9bb800;
+    display: inherit;
+    cursor: pointer;
+}
+.post-3 {
+	background: #ed5120;
+    display: inherit;
+    cursor: pointer;
+}
+.post-4 {
+	background: #9d27b0;
+    display: inherit;
+    cursor: pointer;
+}
+.post-5 {
+	background: #2d95bb;
+    cursor: pointer;
+    display: inherit;
+}
+
+
+/* Your styles go here */
+
+/*logo and nav bar*/
+.logo span:first-child {
+    color: #ffffff;
+    justify-items: flex-end;
+    font-weight: 100;
+}
+.logo span:last-child {
+    color: #9d27b0;
+    font-weight: 100;
+}
+header {
+    background-color: #024161;
+    margin: 0;
+    padding: 0 40px 0 40px;
+}
+.nav-bar {
+    display: inherit;
+}
+.nav-bar a {
+    display: inherit;
+    padding: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+.nav-bar a:hover {
+    background-color: #1f52a4;
+}
+@media only screen and (min-device-width:769px) {
+    body {
+
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-grid {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .flex-title-news-1 img {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:768px) {
+    body {
+        margin: 0 8px 0 8px;
+        max-width: 768px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .post-grid {
+        display: block;
+        max-width: 485px;
+    }
+    .main-grid {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .flex-title-news-1 img {
+        max-width: 260px;
+    }
+}
+.post-date {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.6;
+    font-weight: 100;
+    padding: 0 10px 0 10px;
+    font-size: 40px;
+}
+h2 {
+    font-size: 35px;
+}
+.post-0,h2,p {
+    color: #ffffff;
+}
+.post-1,h2,
+.post-2,h2,
+.post-3,h2,
+.post-3,h2,
+.post-4,h2 {
+    color: #ffffff;
+    font-weight: unset;
+}
+.text-container {
+    min-width: 400px;
+    display: inherit;
+    margin: 0;
+}
+.post-0 div{
+    display:flex;
+    flex-direction: column;
+    background-image: url(../img/post0.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-position: top;
+    height: 518px;
+    justify-content: flex-end;
+}
+.post-0 p:nth-child(2){
+    max-width: 60%;
+    margin-block-end: 5%;
+    margin-left: 3%;
+}
+.post-0 h2:nth-child(1){
+    margin-left: 3%;
+}
+aside {
+    margin: 10px;
+}
+
+/*footer*/
+footer {
+    background-color: #024161 ;
+}
+.flex-title-news-1 {
+    max-width: 400px;
+    display: block;
+}
+.flex-title-news-1 img {
+    margin: 0;
+}
+.flex-title-news-1 h2 {
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+}
+.flex-title-news-1 p {
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+}
+
